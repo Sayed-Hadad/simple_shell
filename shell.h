@@ -22,6 +22,7 @@ int my_own_cd(char **args);
 int my_own_exit(char **args);
 int my_own_env(char **args);
 int my_own_help(char **args);
-void shell(void);
+void interactive_mode(void);
+void non_interactive_mode(void);
 
 #endif

@@ -20,7 +20,7 @@ char *interpret_line(void)
 		else
 		{
 			free(line); /* avoid memory leaks when getline fails */
-			perror("error while reading the line from stdin");
+			perror("error in read_line: getline");
 			exit(EXIT_FAILURE);
 		}
 	}
