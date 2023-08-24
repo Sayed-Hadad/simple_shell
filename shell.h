@@ -24,5 +24,11 @@ int my_own_env(char **args);
 int my_own_help(char **args);
 void interactive_mode(void);
 void non_interactive_mode(void);
+/*String Functions*/
+unsigned int _strlen(const char *s);
+char *_strdup(char *str);
+int _strcmp(char *s1, char *s2);
+int _atoi(char *s);
+
 
 #endif
