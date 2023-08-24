@@ -16,7 +16,7 @@ int exec_args(char **args)
 	int(*builtin_func[])(char **) = { &my_own_cd,
 									  &my_own_env,
 									  &my_own_help,
-									   &my_own_exit};
+									  &my_own_exit};
 
 	unsigned long i = 0;
 
@@ -27,7 +27,7 @@ int exec_args(char **args)
 
 	for (; i < sizeof(builtin_func_list) / sizeof(char *); i++)
 	{
-		if (strcmp(args[0], builtin_func_list[i]) == 0)
+		if (_strcmp(args[0], builtin_func_list[i]) == 0)
 		{
 			return ((*builtin_func[i])(args));
 		}
